@@ -144,7 +144,7 @@ public class AStarMgr : BaseManager<AStarMgr>
             {
                 Grid node = openList[i];
                 node.color = Color.green;
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.05f);
                 Debug.Log("点" + node.gridWidght + "," + node.girdHeight + ":g=" + node.g + "h=" + node.h + "f=" + node.f);
             }
 
@@ -165,7 +165,7 @@ public class AStarMgr : BaseManager<AStarMgr>
                 while(end.father != null)
                 {
                     end.color = Color.yellow;
-                    yield return new WaitForSeconds(0.1f);
+                    yield return new WaitForSeconds(0.05f);
                     path.Add(end.father);
                     end = end.father;
                 }
