@@ -1,1 +1,1 @@
-# A-Searching_Algorithm_Visualizer
+# A*Searching_Algorithm_Visualizer
