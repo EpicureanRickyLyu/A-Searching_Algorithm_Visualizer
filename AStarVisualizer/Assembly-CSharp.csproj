@@ -36,22 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ProjectBase\AStar\AStarMgr.cs" />
+     <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonAutoMono.cs" />
      <Compile Include="Assets\Scripts\ProjectBase\UI\BasePanel.cs" />
-     <Compile Include="Assets\Scripts\ProjectBase\UI\UIManager.cs" />
-     <Compile Include="Assets\Script\GridTool\GridMaker.cs" />
      <Compile Include="Assets\Scripts\ProjectBase\Event\EventCenter.cs" />
+     <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonMono.cs" />
      <Compile Include="Assets\Scripts\ProjectBase\Mono\MonoController.cs" />
-     <Compile Include="Assets\Scripts\ProjectBase\Base\BaseManager.cs" />
+     <Compile Include="Assets\Script\GridTool\GridMeshCreate.cs" />
      <Compile Include="Assets\Scripts\ProjectBase\Mono\MonoMgr.cs" />
-     <Compile Include="Assets\Script\Controller\SoliderObj.cs" />
+     <Compile Include="Assets\Scripts\ProjectBase\Base\BaseManager.cs" />
+     <Compile Include="Assets\Scripts\ProjectBase\UI\UIManager.cs" />
      <Compile Include="Assets\Script\GridTool\Grid.cs" />
      <Compile Include="Assets\Scripts\ProjectBase\Music\MusicMgr.cs" />
-     <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonAutoMono.cs" />
+     <Compile Include="Assets\Script\GridTool\GridMaker.cs" />
      <Compile Include="Assets\Scripts\ProjectBase\Res\ResMgr.cs" />
-     <Compile Include="Assets\Script\Controller\ChoseBox.cs" />
-     <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonMono.cs" />
-     <Compile Include="Assets\Script\GridTool\GridMeshCreate.cs" />
-     <Compile Include="Assets\Scripts\ProjectBase\AStar\AStarMgr.cs" />
     <Reference Include="UnityEngine">
         <HintPath>E:\Unity3d\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -296,13 +294,13 @@
         <HintPath>E:\Unity3d\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>E:\Unity3d\2021.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -671,82 +669,82 @@
         <HintPath>E:\Unity3d\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>E:\Unity Project\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

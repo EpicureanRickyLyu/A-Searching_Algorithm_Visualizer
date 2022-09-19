@@ -1,1 +1,1 @@
-E:\Unity Project\AStarVisualizer
+E:\Unity Project\AStarSearching_Algorithm_Visualizer\AStarVisualizer
