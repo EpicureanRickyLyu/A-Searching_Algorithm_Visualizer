@@ -5,4 +5,5 @@
 * A* Searching Singleton
 ## Instruction
 * Space to Generate Grid -> LeftMouseClick Two Grid as START adn END -> Key "F" to Run 
+* ↓ Wait For Demo Video ↓
 <img src="/Game Flow.gif" >
